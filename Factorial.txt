@@ -1,0 +1,29 @@
+//Name: Raegan Faith F. Paguirigan
+//Partner: Jill Shyrine Alejandrino
+class Factorial {
+//So as you can see this is the factorial method	
+	static int factorial( int n) {
+		//the factorial method is calling itself
+		//base case: n-1
+		//initially the value of n is 4
+		if(n != 0)
+			//After passing the recursive call n = 3(4-1)
+			//The process continues until n= 0.
+			return n * factorial(n-1);
+		//if statement returns false, 1 is returned
+		else return 1;
+	}
+	//main method
+	//the overall result is passed in this method(main)
+	public static void main(String[] args) {
+		int number = 4, result;
+	
+		result = factorial(number); //value of result
+		//4(3)+4(2)+4(1)=24
+		System.out.println(number + " factorial = " + result);
+		
+
+	}
+
+}
+
